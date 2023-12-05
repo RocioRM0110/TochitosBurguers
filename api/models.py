@@ -11,3 +11,15 @@ class Registro(models.Model):
     confirmpassword = models.CharField(max_length=100, db_column='confirmpassword')
     class Meta:
         db_table='Usuarios'
+
+# # models.py
+# from django.db import models
+
+# class Recipe(models.Model):
+#     name = models.CharField(max_length=100)
+#     image = models.ImageField(upload_to='recipe_images/')  # Aquí es donde se especifica la carpeta para almacenar las imágenes
+#     price = models.DecimalField(max_digits=5, decimal_places=2)
+#     # Otros campos que puedas necesitar
+
+        
+

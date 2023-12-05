@@ -81,3 +81,7 @@ class Dash(APIView):
     def get(self,request):
         return render(request,self.template_name)
 
+# # views.py
+# def recipe_list(request):
+#     recipes = Recipe.objects.all()
+#     return render(request, 'index.html', {'recipes': recipes})

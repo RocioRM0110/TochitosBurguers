@@ -164,7 +164,22 @@
  
 
 
-
+{% comment %} 
+<!-- En tu_template.html -->
+<div class="owl-carousel owl-theme">
+    {% for recipe in recipes %}
+        <div class="item">
+            <div class="product_blog_img">
+                <img src="{{ recipe.image.url }}" alt="{{ recipe.name }}" />
+            </div>
+            <div class="product_blog_cont">
+                <h3>{{ recipe.name }}</h3>
+                <h4><span class="theme_color">$</span>{{ recipe.price }}</h4>
+                <!-- Resto de tu código -->
+            </div>
+        </div>
+    {% endfor %}
+</div> {% endcomment %}
 
 
 
