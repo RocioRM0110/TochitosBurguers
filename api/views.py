@@ -80,6 +80,11 @@ class Dash(APIView):
     template_name="dash.html"
     def get(self,request):
         return render(request,self.template_name)
+    
+class Products(APIView):
+    template_name="products.html"
+    def get(self,request):
+        return render(request,self.template_name)
 
 # # views.py
 # def recipe_list(request):

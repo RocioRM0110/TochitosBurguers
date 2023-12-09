@@ -33,6 +33,7 @@ urlpatterns = [
     path('recipe.html',Recipe.as_view(),name='recipe'),
     path('login.html',Login.as_view(),name='login'),
     path('dash.html',Dash.as_view(),name='dash'),
+    path('products.html',Products.as_view(),name='products'),
     
 
 ]
