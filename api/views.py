@@ -29,6 +29,40 @@ def register(request):
     else:
         form = RegistroForm()
     return render(request, 'register.html', {'form': form})
+# views.py
+# from django.shortcuts import render, redirect
+# from django.contrib import messages
+# from django.template.loader import render_to_string
+# from django.core.mail import send_mail
+# from .forms import RegisterForm
+
+# def register(request):
+#     if request.method == 'POST':
+#         form = RegisterForm(request.POST)
+#         if form.is_valid():
+#             # Guarda los datos del formulario en la base de datos
+#             form.save()
+
+#             # Redirige a la página de inicio de sesión u otra página que desees
+#             messages.success(request, 'El registro se ha creado con éxito.')
+
+#             # Envía el correo de bienvenida
+#             subject = 'Bienvenido a BURGER TOCHITOS'
+#             from_email = 'chio7933@gmail.com'
+#             correo = form.cleaned_data['email']
+#             password = form.cleaned_data['password']
+#             recipient_list = [correo]
+#             contexto = {'correo': correo, 'password': password}
+#             contenido_correo = render_to_string('correo.html', contexto)
+#             send_mail(subject, '', from_email, recipient_list, html_message=contenido_correo)
+
+#             return redirect('iniciar_sesion')
+
+#     else:
+#         form = RegisterForm()
+
+#     return render(request, 'register.html', {'form': form})
+
 
 
 class Login(APIView):
