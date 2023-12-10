@@ -536,11 +536,11 @@ list-group-item {
      line-height: 29px;
 }
  .about .about_box a:hover {
-     color: #e7bb0b;
+     color: #000000;
 }
  .about .about_img {
      height: 100%;
-     background: #d8b00f;
+     background: #000000;
      margin-top: 90px;
 }
  .about .about_img figure {
@@ -652,7 +652,7 @@ list-group-item {
 /** end Our Client **/
 /*--------------------------------------------------------------------- footer ---------------------------------------------------------------------*/
  .footer {
-     background: #d8b00f;
+     background: #000000;
      padding-top:90px;
      margin-top: 90px;
 }
