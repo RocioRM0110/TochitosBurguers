@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     content: attr(data-icon);
     speak: none;
 }
+
 /* ----------------------------------
  * index
  * ---------------------------------- */
@@ -959,11 +960,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         /* 3 columns */
     }
     .row-offcanvas-right.active .sidebar-offcanvas {
-        /*background-color: rgb(254, 254, 254);*/
+        background-color: rgb(254, 254, 254);
     }
+    
     .row-offcanvas-left.active .sidebar-offcanvas {
-        /*background-color: rgb(254, 254, 254);*/
+        background-color: rgb(254, 254, 254);
     }
+    
     .row-offcanvas .content {
         width: 80%;
         /* 9 columns */
@@ -1042,8 +1045,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-size: 1.5em;
     justify-content: center;
     margin: 0.25rem;
-    overflow: hidden position: relative;
+    overflow: hidden;
+    position: relative;
 }
+
 .flex-demo .flex-item {
     background: hsl(219, 50%, 75%)
 }
