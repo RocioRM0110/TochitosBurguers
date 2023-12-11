@@ -89,10 +89,10 @@
                     <div class="full">
                         <div class="right_header_info">
                             <ul>
-                                <li class="dinone">Contact Us : <img style="margin-right: 15px;margin-left: 15px;" src="{% static 'images/phone_icon.png' %}" alt="#"><a href="#">987-654-3210</a></li>
-                                <li class="dinone"><img style="margin-right: 15px;" src="{% static 'images/mail_icon.png'%}" alt="#"><a href="#">demo@gmail.com</a></li>
-                                <li class="dinone"><img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="{% static 'images/location_icon.png'%}" alt="#"><a href="#">104 New york , USA</a></li>
-                                <li class="button_user"><a class="button active" href="login.html">Login</a><a class="button" href="{% url "register" %}">Register</a></li>
+                                <li class="dinone">Congtactanos : <img style="margin-right: 15px;margin-left: 15px;" src="{% static 'images/phone_icon.png' %}" alt="#"><a href="#">55-987-654-3210</a></li>
+                                <li class="dinone"><img style="margin-right: 15px;" src="{% static 'images/mail_icon.png'%}" alt="#"><a href="#">TochBurguers@gmail.com</a></li>
+                                <li class="dinone"><img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="{% static 'images/location_icon.png'%}" alt="#"><a href="#"></a></li>
+                                <li class="button_user"><a class="button active" href="login.html">Inicia</a><a class="button" href="{% url "register" %}">Registrate</a></li>
                                 <li><img style="margin-right: 15px;" src="{% static 'images/search_icon.png' %}" alt="#"></li>
                                 <li>
                                     <button type="button" id="sidebarCollapse">
@@ -126,7 +126,7 @@
                                         </div>
                                         <div class="col-md-7">
                                             <div class="slider_image full text_align_center">
-                                                <img class="img-responsive" src="{% static 'images/logo2.jpg' %}" alt="#" />
+                                                <img class="img-responsive" src="{% static 'images/fondo.jpg' %}" alt="#" />
                                             </div>
                                         </div>
                                     </div>
@@ -309,7 +309,7 @@ siclo for para imagenes desde la base de dtaos {% endcomment %}
 </section>
 <div class="bg_bg">
 <!-- about -->
-<div class="about">
+{% comment %} <div class="about">
     <div class="container">
       <div class="row">
          <div class="col-md-12">
@@ -337,11 +337,11 @@ siclo for para imagenes desde la base de dtaos {% endcomment %}
          </div>      
        </div> 
     </div>
-</div>
+</div> {% endcomment %}
 <!-- end about -->
 
 <!-- blog -->
-<div class="blog">
+{% comment %} <div class="blog">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -388,7 +388,7 @@ siclo for para imagenes desde la base de dtaos {% endcomment %}
       </div>
     </div>
   </div>
-</div>
+</div> {% endcomment %}
 <!-- end blog -->
 {% comment %} 
 <!-- Our Client -->
@@ -419,7 +419,7 @@ siclo for para imagenes desde la base de dtaos {% endcomment %}
 <!-- end Our Client -->
 </div>
     <!-- footer -->
-    <fooetr>
+    {% comment %} <fooetr>
         <div class="footer">
             <div class="container-fluid">
                 <div class="row">
@@ -448,7 +448,7 @@ siclo for para imagenes desde la base de dtaos {% endcomment %}
                                 </div>
                             </div>
                         </form>
-                    </div>
+                    </div> {% endcomment %}
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <div class="img-box">
                             <style>
@@ -469,8 +469,8 @@ siclo for para imagenes desde la base de dtaos {% endcomment %}
                             </style>
                         
                             <div id="map-container">
-                                <gmp-map center="19.41267204284668,-98.92762756347656" zoom="14" map-id="DEMO_MAP_ID">
-                                    <gmp-advanced-marker position="19.41267204284668,-98.92762756347656" title="My location"></gmp-advanced-marker>
+                                <center> <gmp-map center="19.41267204284668,-98.92762756347656" zoom="14" map-id="DEMO_MAP_ID">
+                                   <gmp-advanced-marker position="19.41267204284668,-98.92762756347656" title="My location"></gmp-advanced-marker></center>
                                 </gmp-map>
                             </div>
                         
@@ -480,7 +480,7 @@ siclo for para imagenes desde la base de dtaos {% endcomment %}
                 <div class="row">
                     <div class="col-md-12">
                         <div class="footer_logo">
-                          <a href="index.html"><img src="{% static 'images/logo1.jpg' %}" alt="logo" /></a>
+                          {% comment %} <a href="index.html"><img src="{% static '' %}" alt="logo" /></a> {% endcomment %}
                         </div>
                     </div>
                     <div class="col-md-12">
