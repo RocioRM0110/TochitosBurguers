@@ -85,11 +85,11 @@
                                 <li class="dinone">Contact Us : <img style="margin-right: 15px;margin-left: 15px;" src="{% static 'images/phone_icon.png' %}" alt="#"><a href="#">987-654-3210</a></li>
                                 <li class="dinone"><img style="margin-right: 15px;" src="{% static 'images/mail_icon.png'%}" alt="#"><a href="#">demo@gmail.com</a></li>
                                 <li class="dinone"><img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="{% static 'images/location_icon.png'%}" alt="#"><a href="#">104 New york , USA</a></li>
-                                <li class="button_user">
+                                {% comment %} <li class="button_user">
                                     <a class="button active" href="{% url 'login' %}">Login</a>
                                     <a class="button" href="{% url 'register' %}">Register</a>
                                 </li>
-                                
+                                 {% endcomment %}
                                 <li><img style="margin-right: 15px;" src="{% static 'images/search_icon.png' %}" alt="#"></li>
                                 <li>
                                     <button type="button" id="sidebarCollapse">
@@ -110,7 +110,7 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="title">
-                     <h2>Our Recipes</h2>
+                     <h2>Nuestro menu</h2>
                     
                   </div>
                </div>
@@ -121,107 +121,174 @@
     <section class="resip_section">
         <div class="container">
             <div class="row">
-               
-                <div class="col-md-12">
+         <div class="col-md-12">
+       <div class="ourheading">
+    <h2>Nuestros productos</h2>
+  </div>
+</div>    
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
             <div class="owl-carousel owl-theme">
 
                 <div class="item">
                     <div class="product_blog_img">
-                        <img src="{% static 'images/rs1.png'%}" alt="#" />
+                        <img src="{% static 'images/img1 (3).jpg' %}" alt="#" />
                     </div>
                     <div class="product_blog_cont">
                         <h3>Homemade</h3>
                         <h4><span class="theme_color">$</span>10</h4>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick" />
+                            <input type="hidden" name="hosted_button_id" value="U4WSAXF8F3HPQ" />
+                            <input type="hidden" name="currency_code" value="MXN" />
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+                          </form>
                     </div>
                 </div>
                 <div class="item">
                     <div class="product_blog_img">
-                        <img src="{% static 'images/rs2.png '%}" alt="#" />
+                        <img src="{% static 'images/img1 (1).jpg' %}" alt="#" />
                     </div>
                     <div class="product_blog_cont">
                         <h3>Noodles</h3>
-                        <h4><span class="theme_color">$</span>20</h4>
+                        <h4><span class="theme_color">$</span>60</h4>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick" />
+                            <input type="hidden" name="hosted_button_id" value="U4WSAXF8F3HPQ" />
+                            <input type="hidden" name="currency_code" value="MXN" />
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+                          </form>
                     </div>
                 </div>
                 <div class="item">
                     <div class="product_blog_img">
-                        <img src="{% static 'images/rs3.png' %}" alt="#" />
+                        <img src="{% static 'images/img1 (2).jpg' %}" alt="#" />
                     </div>
                     <div class="product_blog_cont">
                         <h3>Egg</h3>
                         <h4><span class="theme_color">$</span>30</h4>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick" />
+                            <input type="hidden" name="hosted_button_id" value="U4WSAXF8F3HPQ" />
+                            <input type="hidden" name="currency_code" value="MXN" />
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+                          </form>
                     </div>
                 </div>
                 <div class="item">
                     <div class="product_blog_img">
-                        <img src="{% static 'images/rs4.png '%}" alt="#" />
+                        <img src="{% static 'images/img1 (3).jpg' %}" alt="#" />
                     </div>
                     <div class="product_blog_cont">
                         <h3>Sushi Dizzy</h3>
                         <h4><span class="theme_color">$</span>40</h4>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick" />
+                            <input type="hidden" name="hosted_button_id" value="U4WSAXF8F3HPQ" />
+                            <input type="hidden" name="currency_code" value="MXN" />
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+                          </form>
                     </div>
                 </div>
                 <div class="item">
                     <div class="product_blog_img">
-                        <img src="{% static 'images/rs5.png '%}" alt="#" />
+                        <img src="{% static 'images/img2 (1).jpg' %}" alt="#" />
                     </div>
                     <div class="product_blog_cont">
                         <h3>The Coffee Break</h3>
                         <h4><span class="theme_color">$</span>50</h4>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick" />
+                            <input type="hidden" name="hosted_button_id" value="U4WSAXF8F3HPQ" />
+                            <input type="hidden" name="currency_code" value="MXN" />
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+                          </form>
                     </div>
                 </div>
                 <div class="item">
                     <div class="product_blog_img">
-                        <img src="{% static 'images/rs1.png' %}" alt="#" />
+                        <img src="{% static 'images/img2 (2).jpg' %}" alt="#" />
                     </div>
                     <div class="product_blog_cont">
                         <h3>Homemade</h3>
                         <h4><span class="theme_color">$</span>10</h4>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick" />
+                            <input type="hidden" name="hosted_button_id" value="U4WSAXF8F3HPQ" />
+                            <input type="hidden" name="currency_code" value="MXN" />
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+                          </form>
                     </div>
                 </div>
                 <div class="item">
                     <div class="product_blog_img">
-                        <img src="{% static 'images/rs2.png' %}" alt="#" />
+                        <img src="{% static 'images/img1 (3).jpg' %}" alt="#" />
                     </div>
                     <div class="product_blog_cont">
                         <h3>Noodles</h3>
                         <h4><span class="theme_color">$</span>20</h4>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick" />
+                            <input type="hidden" name="hosted_button_id" value="U4WSAXF8F3HPQ" />
+                            <input type="hidden" name="currency_code" value="MXN" />
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+                          </form>
                     </div>
                 </div>
                 <div class="item">
                     <div class="product_blog_img">
-                        <img src="{% static 'images/rs3.png '%}" alt="#" />
+                        <img src=" {% static 'images/img1 (2).jpg '%}" alt="#" />
                     </div>
                     <div class="product_blog_cont">
                         <h3>Egg</h3>
                         <h4><span class="theme_color">$</span>30</h4>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick" />
+                            <input type="hidden" name="hosted_button_id" value="U4WSAXF8F3HPQ" />
+                            <input type="hidden" name="currency_code" value="MXN" />
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+                          </form>
                     </div>
                 </div>
                 <div class="item">
                     <div class="product_blog_img">
-                        <img src="{% static 'images/rs4.png ' %}" alt="#" />
+                        <img src=" {% static 'images/img1 (3).jpg' %}" alt="#" />
                     </div>
                     <div class="product_blog_cont">
                         <h3>Sushi Dizzy</h3>
                         <h4><span class="theme_color">$</span>40</h4>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick" />
+                            <input type="hidden" name="hosted_button_id" value="U4WSAXF8F3HPQ" />
+                            <input type="hidden" name="currency_code" value="MXN" />
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+                          </form>
                     </div>
                 </div>
                 <div class="item">
                     <div class="product_blog_img">
-                        <img src="{% static 'images/rs5.png ' %}" alt="#" />
+                        <img src="{% static 'images/img2 (1).jpg '%}" alt="#" />
                     </div>
                     <div class="product_blog_cont">
                         <h3>The Coffee Break</h3>
                         <h4><span class="theme_color">$</span>50</h4>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick" />
+                            <input type="hidden" name="hosted_button_id" value="U4WSAXF8F3HPQ" />
+                            <input type="hidden" name="currency_code" value="MXN" />
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+                          </form>
                     </div>
                 </div>
 
             </div>
         </div>
-            </div>
-        </div>
-    </section>
-
+    </div>
+</div>
+</div>
+</div>
+</section>
 
     <!-- footer -->
     <fooetr>

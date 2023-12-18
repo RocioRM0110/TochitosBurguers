@@ -120,6 +120,10 @@ class Products(APIView):
     def get(self,request):
         return render(request,self.template_name)
 
+class Index2(APIView):
+    template_name="index2.html"
+    def get(self,request):
+        return render(request,self.template_name)
 # # views.py
 # def recipe_list(request):
 #     recipes = Recipe.objects.all()

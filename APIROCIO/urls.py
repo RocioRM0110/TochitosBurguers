@@ -25,6 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',Index.as_view(),name='Index'),
     path('index.html',Index.as_view(),name='index'),
+    path('index2.html',Index2.as_view(),name='index2'),
     # path('register.html',Register.as_view(),name='register'),
     path('register.html', Register.as_view(), name='register'),
     path('password.html',Password.as_view(),name='password'),
