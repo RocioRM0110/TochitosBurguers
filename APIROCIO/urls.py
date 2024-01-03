@@ -20,22 +20,23 @@ from api.views import *
 
 
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',Index.as_view(),name='Index'),
     path('index.html',Index.as_view(),name='index'),
     path('index2.html',Index2.as_view(),name='index2'),
     # path('register.html',Register.as_view(),name='register'),
-    path('register.html', Register.as_view(), name='register'),
-    path('password.html',Password.as_view(),name='password'),
-    path('about.html',About.as_view(),name='about'),
-    path('blog.html',Blog.as_view(),name='blog'),
-    path('contact.html',Contact.as_view(),name='contact'),
-    path('recipe.html',Recipe.as_view(),name='recipe'),
+    path('register', register_view, name='register'),
+    path('password',Password.as_view(),name='password'),
+    path('about',About.as_view(),name='about'),
+    path('blog',Blog.as_view(),name='blog'),
+    path('contact',Contact.as_view(),name='contact'),
+    path('recipe',Recipe.as_view(),name='recipe'),
     path('login.html',Login.as_view(),name='login'),
-    path('dash.html',Dash.as_view(),name='dash'),
-    path('products.html',Products.as_view(),name='products'),
+    path('dash',Dash.as_view(),name='dash'),
+    path('products',Products.as_view(),name='products'),
+    path('index3.html',Index3.as_view(),name='index3'),
+    
     
 
 ]

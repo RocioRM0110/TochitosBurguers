@@ -92,7 +92,7 @@
                                 <li class="dinone">Contactanos : <img style="margin-right: 15px;margin-left: 15px;" src="{% static 'images/phone_icon.png' %}" alt="#"><a href="#">55-987-654-3210</a></li>
                                 <li class="dinone"><img style="margin-right: 15px;" src="{% static 'images/mail_icon.png'%}" alt="#"><a href="#">TochBurguers@gmail.com</a></li>
                                 <li class="dinone"><img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="{% static 'images/location_icon.png'%}" alt="#"><a href="#"></a></li>
-                                <li class="button_user"><a class="button active" href="login.html">Inicia</a><a class="button" href="{% url "register" %}">Registrate</a></li>
+                                <li class="button_user"><a class="button active" href="login.html">Inicia</a><a class="button" href="{% url 'register' %}">Registrate</a></li>
                                 <li><img style="margin-right: 15px;" src="{% static 'images/search_icon.png' %}" alt="#"></li>
                                 <li>
                                     <button type="button" id="sidebarCollapse">
@@ -107,6 +107,9 @@
         </div>
     </header>
     <!-- end header -->
+
+
+
     <!-- start slider section -->
     <div class="slider_section">
         <div class="container">

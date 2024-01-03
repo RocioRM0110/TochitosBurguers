@@ -75,10 +75,35 @@ class Index(APIView):
     def get(self,request):
         return render(request,self.template_name)
     
-class Register(APIView):
-    template_name="register.html"
-    def get(self,request):
-        return render(request,self.template_name)
+from django.shortcuts import render, redirect
+from django.contrib.auth.models import User
+from django.contrib import messages
+
+def register_view(request):
+    if request.method == 'POST':
+        # Obtener los datos del formulario
+        first_name = request.POST['first_name']
+        last_name = request.POST['last_name']
+        email = request.POST['email']
+        password = request.POST['password']
+        password_confirm = request.POST['password_confirm']
+
+        # Validar que las contraseñas coincidan
+        if password != password_confirm:
+            messages.error(request, 'Las contraseñas no coinciden.')
+            return redirect('register')  # Redirigir de vuelta al formulario de registro con el mensaje de error
+
+        # Crear el usuario
+        try:
+            user = User.objects.create_user(username=email, email=email, password=password, first_name=first_name, last_name=last_name)
+            messages.success(request, 'Usuario registrado exitosamente.')
+            return redirect('login')  # Redirigir a la página de inicio de sesión después del registro exitoso
+        except Exception as e:
+            messages.error(request, f'Error durante el registro: {e}')
+            return redirect('register')  # Redirigir de vuelta al formulario de registro con el mensaje de error
+
+    return render(request, 'register.html')  # Asegúrate de cambiar 'tu_app' por el nombre real de tu aplicación
+
     
 class Password(APIView):
     template_name="password.html"
@@ -122,6 +147,11 @@ class Products(APIView):
 
 class Index2(APIView):
     template_name="index2.html"
+    def get(self,request):
+        return render(request,self.template_name)
+    
+class Index3(APIView):
+    template_name="index3.html"
     def get(self,request):
         return render(request,self.template_name)
 # # views.py
