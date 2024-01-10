@@ -37,6 +37,4 @@ urlpatterns = [
     path('products',Products.as_view(),name='products'),
     path('index3.html',Index3.as_view(),name='index3'),
     
-    
-
 ]
